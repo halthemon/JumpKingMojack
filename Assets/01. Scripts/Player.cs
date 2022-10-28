@@ -87,7 +87,7 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.contacts[0].normal.y>0.7f)
+        if(collision.contacts[0].normal.y>0.6f)
         {
             isJump = false;
             jumpCount = 0;
@@ -97,6 +97,6 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isJump = true;
+          isJump = true;
     }
 }
